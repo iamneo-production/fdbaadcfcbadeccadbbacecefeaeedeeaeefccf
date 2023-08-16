@@ -3,11 +3,11 @@ package com.example.springapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@RestApplication
+@SpringBootApplication
 public class SpringappApplication {
-	
-	public String Welcome() {
-		return "Welcome String Boot!";
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringappApplication.class, args);
 	}
 
 }
